@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: rgb(77,255,193);
+    background: linear-gradient(227deg, rgba(77,255,193,1) 0%, rgba(62,0,185,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-bottom: 20px;
+    color: rgb(3, 3, 184);
+}
+
+.form-container{
+    background-color: white;
+    width: 450px;
+    max-width: 100%;
+    padding: 3rem;
+    margin: 10px;
+}
+
+.form-container h1{
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form > div {
+    margin-block: 10px;
+}
+
+input{
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, #691eff, #10e79c);
+    border-image-slice: 1;
+    padding-block: 5px;
+    font-size: 1rem;
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+input[type="checkbox"]{
+    border: none;
+}
+
+div > input{
+    margin: 0;
+    margin-right: 10px;
+}
+
+button{
+    width: 200px;
+    margin: auto;
+    margin-block: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    background: rgb(77,255,193);
+background: linear-gradient(227deg, rgba(77,255,193,1) 0%, rgba(62,0,185,1) 100%);
+    color: #ffffff;
+}
+
+p{
+    text-align:center;
+}
