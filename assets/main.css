@@ -14,11 +14,39 @@ body,html{
     justify-content: center;
     align-items: center;
 }
+a{
+    text-decoration: none;
+    color: #0303b8;
+}
 
 h1{
     margin-bottom: 20px;
-    color: rgb(3, 3, 184);
+    color: #0303b8;
+    position: relative;
 }
+
+h1::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(227deg, rgba(77,255,193,1) 0%, rgba(62,0,185,1) 100%);
+    right: 0;
+    top: 30%;
+    border-radius: 50%;
+}
+
+h1::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(227deg, #4dffc1 0%, rgba(62,0,185,1) 100%);
+    left: 0;
+    top: 30%;
+    border-radius: 50%;
+}
+
 
 .form-container{
     background-color: white;
@@ -26,6 +54,13 @@ h1{
     max-width: 100%;
     padding: 3rem;
     margin: 10px;
+    position: relative;
+}
+
+.form-close-btn{
+    position: absolute;
+    right: 40px;
+    top: 25px;
 }
 
 .form-container h1{
