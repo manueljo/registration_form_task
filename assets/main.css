@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 
-body,html{
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
+body{
+    min-height: 100vh;
     background: rgb(77,255,193);
     background: linear-gradient(227deg, rgba(77,255,193,1) 0%, rgba(62,0,185,1) 100%);
     display: flex;
